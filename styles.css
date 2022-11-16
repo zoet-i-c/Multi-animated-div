@@ -1,0 +1,45 @@
+@keyframes rotatediv {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes changeshape {
+    0%{
+      border-radius: 0%;
+    }
+    25%{
+        border-radius: 12.5%;
+    }
+    50%{
+        border-radius: 25%
+    }
+    100% {
+      border-radius: 50%;
+    }
+}
+@keyframes reducesize {
+    from{
+        height: 200px;
+        width: 200px;
+    }
+    to{
+        height: 100px;
+        width: 100px;
+    }
+}
+#div1 {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    background-color: aquamarine;
+    animation-name: changeshape,rotatediv,reducesize;
+    animation-duration: 0.7s,0.7s,0.7s;
+    animation-iteration-count: infinite,infinite,infinite;
+    animation-direction: alternate,alternate,alternate;
+}
+  
